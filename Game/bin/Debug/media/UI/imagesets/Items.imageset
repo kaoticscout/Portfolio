@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Imageset Name="Items" Imagefile="Items.tga" NativeHorzRes="1024" NativeVertRes="768" >
+    <Image Name="NULL" XPos="507" YPos="34" Width="27" Height="33" />
+    <Image Name="Default" XPos="507" YPos="34" Width="27" Height="33" />
+    <Image Name="Helm01" XPos="9" YPos="400" Width="78" Height="72" />
+    <Image Name="Boots01" XPos="9" YPos="553" Width="76" Height="72" />
+    <Image Name="Chest01" XPos="10" YPos="479" Width="76" Height="70" />
+    <Image Name="Shirt01" XPos="10" YPos="239" Width="75" Height="71" />
+    <Image Name="Sword01" XPos="11" YPos="320" Width="73" Height="71" />
+    <Image Name="Sword02" XPos="92" YPos="320" Width="76" Height="73" />
+    <Image Name="Sword03" XPos="176" YPos="321" Width="77" Height="73" />
+    <Image Name="Gloves01" XPos="9" YPos="10" Width="74" Height="71" />
+    <Image Name="Bracers01" XPos="8" YPos="90" Width="76" Height="71" />
+    <Image Name="CharacterSheet" XPos="690" YPos="423" Width="336" Height="346" />
+    <Image Name="HealingPotion01" XPos="10" YPos="166" Width="74" Height="69" />
+</Imageset>

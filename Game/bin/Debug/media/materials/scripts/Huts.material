@@ -1,0 +1,18 @@
+material WOOD_HUT
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture wood.png
+			}
+		}
+
+	}
+
+}
+
+
+

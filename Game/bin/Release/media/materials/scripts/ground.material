@@ -1,0 +1,45 @@
+material DefaultTileTexture
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture KAMEN320x240.jpg
+			}
+		}
+
+	}
+
+}
+material Ice
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture Water01.jpg
+			}
+		}
+
+	}
+
+}
+material Rockwall
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture rockwall_temp.tga
+			}
+		}
+	}
+}
+
+

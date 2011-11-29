@@ -1,0 +1,51 @@
+
+material Door
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0 1
+			diffuse 0 0 0 1
+			specular 0 0 0 1 10
+		}
+
+	}
+
+}
+
+
+
+material Hut
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.270588 0.137255 0.0470588 1
+			diffuse 0.270588 0.137255 0.0470588 1
+			specular 0 0 0 1 10
+		}
+
+	}
+
+}
+
+
+
+material Roof
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.509804 0.486275 0.368627 1
+			diffuse 0.509804 0.486275 0.368627 1
+			specular 0 0 0 1 10
+		}
+
+	}
+
+}
+
+

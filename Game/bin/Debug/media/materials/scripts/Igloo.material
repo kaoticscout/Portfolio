@@ -1,0 +1,17 @@
+
+material Igloo
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.823529 0.823529 0.823529 1
+			diffuse 0.823529 0.823529 0.823529 1
+			specular 0 0 0 1 10
+		}
+
+	}
+
+}
+
+

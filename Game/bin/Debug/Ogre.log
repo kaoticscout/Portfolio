@@ -1,295 +1,117 @@
-22:51:54: Creating resource group General
-22:51:54: Creating resource group Internal
-22:51:54: Creating resource group Autodetect
-22:51:54: SceneManagerFactory for type 'DefaultSceneManager' registered.
-22:51:54: Registering ResourceManager for type Material
-22:51:54: Registering ResourceManager for type Mesh
-22:51:54: Registering ResourceManager for type Skeleton
-22:51:54: MovableObjectFactory for type 'ParticleSystem' registered.
-22:51:54: OverlayElementFactory for type Panel registered.
-22:51:54: OverlayElementFactory for type BorderPanel registered.
-22:51:54: OverlayElementFactory for type TextArea registered.
-22:51:54: Registering ResourceManager for type Font
-22:51:54: ArchiveFactory for archive type FileSystem registered.
-22:51:54: ArchiveFactory for archive type Zip registered.
-22:51:54: DDS codec registering
-22:51:54: FreeImage version: 3.13.1
-22:51:54: This program uses FreeImage, a free, open source image library supporting all common bitmap formats. See http://freeimage.sourceforge.net for details
-22:51:54: Supported formats: bmp,ico,jpg,jif,jpeg,jpe,jng,koa,iff,lbm,mng,pbm,pbm,pcd,pcx,pgm,pgm,png,ppm,ppm,ras,tga,targa,tif,tiff,wap,wbmp,wbm,psd,cut,xbm,xpm,gif,hdr,g3,sgi,exr,j2k,j2c,jp2,pfm,pct,pict,pic,bay,bmq,cr2,crw,cs1,dc2,dcr,dng,erf,fff,hdr,k25,kdc,mdc,mos,mrw,nef,orf,pef,pxn,raf,raw,rdc,sr2,srf,arw,3fr,cine,ia,kc2,mef,nrw,qtk,rw2,sti,drf,dsc,ptx,cap,iiq,rwz
-22:51:54: Registering ResourceManager for type HighLevelGpuProgram
-22:51:54: Registering ResourceManager for type Compositor
-22:51:54: MovableObjectFactory for type 'Entity' registered.
-22:51:54: MovableObjectFactory for type 'Light' registered.
-22:51:54: MovableObjectFactory for type 'BillboardSet' registered.
-22:51:54: MovableObjectFactory for type 'ManualObject' registered.
-22:51:54: MovableObjectFactory for type 'BillboardChain' registered.
-22:51:54: MovableObjectFactory for type 'RibbonTrail' registered.
-22:51:54: Loading library .\RenderSystem_Direct3D9_d
-22:51:54: Installing plugin: D3D9 RenderSystem
-22:51:54: D3D9 : Direct3D9 Rendering Subsystem created.
-22:51:54: D3D9: Driver Detection Starts
-22:51:54: D3D9: Driver Detection Ends
-22:51:54: Plugin successfully installed
-22:51:54: Loading library .\RenderSystem_GL_d
-22:51:54: Installing plugin: GL RenderSystem
-22:51:54: OpenGL Rendering Subsystem created.
-22:51:55: Plugin successfully installed
-22:51:55: Loading library .\Plugin_ParticleFX_d
-22:51:55: Installing plugin: ParticleFX
-22:51:55: Particle Emitter Type 'Point' registered
-22:51:55: Particle Emitter Type 'Box' registered
-22:51:55: Particle Emitter Type 'Ellipsoid' registered
-22:51:55: Particle Emitter Type 'Cylinder' registered
-22:51:55: Particle Emitter Type 'Ring' registered
-22:51:55: Particle Emitter Type 'HollowEllipsoid' registered
-22:51:55: Particle Affector Type 'LinearForce' registered
-22:51:55: Particle Affector Type 'ColourFader' registered
-22:51:55: Particle Affector Type 'ColourFader2' registered
-22:51:55: Particle Affector Type 'ColourImage' registered
-22:51:55: Particle Affector Type 'ColourInterpolator' registered
-22:51:55: Particle Affector Type 'Scaler' registered
-22:51:55: Particle Affector Type 'Rotator' registered
-22:51:55: Particle Affector Type 'DirectionRandomiser' registered
-22:51:55: Particle Affector Type 'DeflectorPlane' registered
-22:51:55: Plugin successfully installed
-22:51:55: Loading library .\Plugin_BSPSceneManager_d
-22:51:55: Installing plugin: BSP Scene Manager
-22:51:55: Plugin successfully installed
-22:51:55: Loading library .\Plugin_CgProgramManager_d
-22:51:55: Installing plugin: Cg Program Manager
-22:51:55: Plugin successfully installed
-22:51:55: Loading library .\Plugin_PCZSceneManager_d
-22:51:55: Installing plugin: Portal Connected Zone Scene Manager
-22:51:55: PCZone Factory Type 'ZoneType_Default' registered
-22:51:55: Plugin successfully installed
-22:51:55: Loading library .\Plugin_OctreeZone_d
-22:51:55: Installing plugin: Octree Zone Factory
-22:51:55: Plugin successfully installed
-22:51:55: Loading library .\Plugin_OctreeSceneManager_d
-22:51:55: Installing plugin: Octree & Terrain Scene Manager
-22:51:55: Plugin successfully installed
-22:51:55: *-*-* OGRE Initialising
-22:51:55: *-*-* Version 1.7.1 (Cthugha)
-22:51:55: Creating resource group CEGUI
-22:51:55: Added resource location '../../media/UI/animations' of type 'FileSystem' to resource group 'CEGUI'
-22:51:55: Added resource location '../../media/UI/configs' of type 'FileSystem' to resource group 'CEGUI'
-22:51:55: Added resource location '../../media/UI/imagesets' of type 'FileSystem' to resource group 'CEGUI'
-22:51:55: Added resource location '../../media/UI/layouts' of type 'FileSystem' to resource group 'CEGUI'
-22:51:55: Added resource location '../../media/UI/looknfeel' of type 'FileSystem' to resource group 'CEGUI'
-22:51:55: Added resource location '../../media/UI/lua_scripts' of type 'FileSystem' to resource group 'CEGUI'
-22:51:55: Added resource location '../../media/UI/schemes' of type 'FileSystem' to resource group 'CEGUI'
-22:51:55: Added resource location '../../media/UI/xml_schemas' of type 'FileSystem' to resource group 'CEGUI'
-22:51:55: Added resource location '../../media/UI/fonts' of type 'FileSystem' to resource group 'CEGUI'
-22:51:55: Added resource location '../../media' of type 'FileSystem' to resource group 'General'
-22:51:55: Creating resource group Popular
-22:51:55: Added resource location '../../media/materials/textures' of type 'FileSystem' to resource group 'Popular'
-22:51:55: Added resource location '../../media/materials/scripts' of type 'FileSystem' to resource group 'Popular'
-22:51:55: Added resource location '../../media/models' of type 'FileSystem' to resource group 'Popular'
-22:51:55: Added resource location '../../media/packs/Sinbad.zip' of type 'Zip' to resource group 'Popular'
-22:51:55: Added resource location '../../media/packs/Skybox.zip' of type 'Zip' to resource group 'Popular'
-22:51:55: Parsing scripts for resource group Autodetect
-22:51:55: Finished parsing scripts for resource group Autodetect
-22:51:55: Parsing scripts for resource group CEGUI
-22:51:55: Finished parsing scripts for resource group CEGUI
-22:51:55: Parsing scripts for resource group General
-22:51:55: Finished parsing scripts for resource group General
-22:51:55: Parsing scripts for resource group Internal
-22:51:55: Finished parsing scripts for resource group Internal
-22:51:55: Parsing scripts for resource group Popular
-22:51:55: Parsing script Examples.material
-22:51:55: Parsing script ground.material
-22:51:55: Parsing script Hut.material
-22:51:55: Parsing script Huts.material
-22:51:55: Parsing script Igloo.material
-22:51:55: Parsing script Sinbad.material
-22:51:55: Parsing script Axe.material
-22:51:55: Parsing script Sword02.material
-22:51:55: Finished parsing scripts for resource group Popular
-22:51:55: D3D9 : RenderSystem Option: Allow NVPerfHUD = No
-22:51:55: D3D9 : RenderSystem Option: FSAA = 0
-22:51:55: D3D9 : RenderSystem Option: Floating-point mode = Fastest
-22:51:55: D3D9 : RenderSystem Option: Full Screen = No
-22:51:55: D3D9 : RenderSystem Option: Rendering Device = Monitor-1-NVIDIA GeForce GTX 260
-22:51:55: D3D9 : RenderSystem Option: Resource Creation Policy = Create on all devices
-22:51:55: D3D9 : RenderSystem Option: VSync = No
-22:51:55: D3D9 : RenderSystem Option: VSync Interval = 1
-22:51:55: D3D9 : RenderSystem Option: Video Mode = 800 x 600 @ 32-bit colour
-22:51:55: D3D9 : RenderSystem Option: sRGB Gamma Conversion = No
-22:51:56: CPU Identifier & Features
-22:51:56: -------------------------
-22:51:56:  *   CPU ID: GenuineIntel: Intel(R) Core(TM)2 Duo CPU     E8400  @ 3.00GHz
-22:51:56:  *      SSE: yes
-22:51:56:  *     SSE2: yes
-22:51:56:  *     SSE3: yes
-22:51:56:  *      MMX: yes
-22:51:56:  *   MMXEXT: yes
-22:51:56:  *    3DNOW: no
-22:51:56:  * 3DNOWEXT: no
-22:51:56:  *     CMOV: yes
-22:51:56:  *      TSC: yes
-22:51:56:  *      FPU: yes
-22:51:56:  *      PRO: yes
-22:51:56:  *       HT: no
-22:51:56: -------------------------
-22:51:56: D3D9 : Subsystem Initialising
-22:51:56: Registering ResourceManager for type Texture
-22:51:56: Registering ResourceManager for type GpuProgram
-22:51:56: D3D9RenderSystem::_createRenderWindow "OGRE", 800x600 windowed  miscParams: FSAA=0 FSAAHint= colourDepth=32 gamma=false monitorIndex=0 useNVPerfHUD=false vsync=false vsyncInterval=1 
-22:51:56: D3D9 : Created D3D9 Rendering Window 'OGRE' : 800x600, 32bpp
-22:51:56: D3D9 : WARNING - disabling VSync in windowed mode can cause timing issues at lower frame rates, turn VSync on if you observe this problem.
-22:51:56: D3D9: Vertex texture format supported - PF_FLOAT16_RGB
-22:51:56: D3D9: Vertex texture format supported - PF_FLOAT16_RGBA
-22:51:56: D3D9: Vertex texture format supported - PF_FLOAT32_RGB
-22:51:56: D3D9: Vertex texture format supported - PF_FLOAT32_RGBA
-22:51:56: D3D9: Vertex texture format supported - PF_FLOAT16_R
-22:51:56: D3D9: Vertex texture format supported - PF_FLOAT32_R
-22:51:56: D3D9: Vertex texture format supported - PF_FLOAT16_GR
-22:51:56: D3D9: Vertex texture format supported - PF_FLOAT32_GR
-22:51:56: RenderSystem capabilities
-22:51:56: -------------------------
-22:51:56: RenderSystem Name: Direct3D9 Rendering Subsystem
-22:51:56: GPU Vendor: nvidia
-22:51:56: Device Name: Monitor-1-NVIDIA GeForce GTX 260
-22:51:56: Driver Version: 8.17.12.6658
-22:51:56:  * Fixed function pipeline: yes
-22:51:56:  * Hardware generation of mipmaps: yes
-22:51:56:  * Texture blending: yes
-22:51:56:  * Anisotropic texture filtering: yes
-22:51:56:  * Dot product texture operation: yes
-22:51:56:  * Cube mapping: yes
-22:51:56:  * Hardware stencil buffer: yes
-22:51:56:    - Stencil depth: 8
-22:51:56:    - Two sided stencil support: yes
-22:51:56:    - Wrap stencil values: yes
-22:51:56:  * Hardware vertex / index buffers: yes
-22:51:56:  * Vertex programs: yes
-22:51:56:  * Number of floating-point constants for vertex programs: 256
-22:51:56:  * Number of integer constants for vertex programs: 16
-22:51:56:  * Number of boolean constants for vertex programs: 16
-22:51:56:  * Fragment programs: yes
-22:51:56:  * Number of floating-point constants for fragment programs: 224
-22:51:56:  * Number of integer constants for fragment programs: 16
-22:51:56:  * Number of boolean constants for fragment programs: 16
-22:51:56:  * Geometry programs: no
-22:51:56:  * Number of floating-point constants for geometry programs: 0
-22:51:56:  * Number of integer constants for geometry programs: 513
-22:51:56:  * Number of boolean constants for geometry programs: 0
-22:51:56:  * Supported Shader Profiles: hlsl ps_1_1 ps_1_2 ps_1_3 ps_1_4 ps_2_0 ps_2_a ps_2_b ps_2_x ps_3_0 vs_1_1 vs_2_0 vs_2_a vs_2_x vs_3_0
-22:51:56:  * Texture Compression: yes
-22:51:56:    - DXT: yes
-22:51:56:    - VTC: no
-22:51:56:    - PVRTC: no
-22:51:56:  * Scissor Rectangle: yes
-22:51:56:  * Hardware Occlusion Query: yes
-22:51:56:  * User clip planes: yes
-22:51:56:  * VET_UBYTE4 vertex element type: yes
-22:51:56:  * Infinite far plane projection: yes
-22:51:56:  * Hardware render-to-texture: yes
-22:51:56:  * Floating point textures: yes
-22:51:56:  * Non-power-of-two textures: yes
-22:51:56:  * Volume textures: yes
-22:51:56:  * Multiple Render Targets: 4
-22:51:56:    - With different bit depths: yes
-22:51:56:  * Point Sprites: yes
-22:51:56:  * Extended point parameters: yes
-22:51:56:  * Max Point Size: 10
-22:51:56:  * Vertex texture fetch: yes
-22:51:56:  * Number of world matrices: 0
-22:51:56:  * Number of texture units: 8
-22:51:56:  * Stencil buffer depth: 8
-22:51:56:  * Number of vertex blend matrices: 0
-22:51:56:    - Max vertex textures: 4
-22:51:56:    - Vertex textures shared: no
-22:51:56:  * Render to Vertex Buffer : no
-22:51:56:  * DirectX per stage constants: yes
-22:51:56: ***************************************
-22:51:56: *** D3D9 : Subsystem Initialised OK ***
-22:51:56: ***************************************
-22:51:56: DefaultWorkQueue('Root') initialising on thread 006ACA78.
-22:51:56: DefaultWorkQueue('Root')::WorkerFunc - thread 00799948 starting.
-22:51:56: Particle Renderer Type 'billboard' registered
-22:51:56: SceneManagerFactory for type 'BspSceneManager' registered.
-22:51:56: Registering ResourceManager for type BspLevel
-22:51:56: SceneManagerFactory for type 'PCZSceneManager' registered.
-22:51:56: MovableObjectFactory for type 'PCZLight' registered.
-22:51:56: MovableObjectFactory for type 'Portal' registered.
-22:51:56: MovableObjectFactory for type 'AntiPortal' registered.
-22:51:56: PCZone Factory Type 'ZoneType_Octree' registered
-22:51:56: PCZone Factory Type 'ZoneType_Terrain' registered
-22:51:56: SceneManagerFactory for type 'OctreeSceneManager' registered.
-22:51:56: SceneManagerFactory for type 'TerrainSceneManager' registered.
-22:51:56: DefaultWorkQueue('Root')::WorkerFunc - thread 007999B8 starting.
-22:51:56: Mesh: Loading Sword.mesh.
-22:51:56: WARNING: Sword.mesh is an older format ([MeshSerializer_v1.40]); you should upgrade it as soon as possible using the OgreMeshUpgrade tool.
-22:51:56: Texture: sinbad_sword.tga: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
-22:51:56: Texture: _cegui_ogre_0: Loading 1 faces(PF_A8B8G8R8,256x256x1) with 0 generated mipmaps from Image. Internal format is PF_A8R8G8B8,256x256x1.
-22:51:58: Texture: _cegui_ogre_1: Loading 1 faces(PF_A8B8G8R8,128x128x1) with 0 generated mipmaps from Image. Internal format is PF_A8R8G8B8,128x128x1.
-22:51:59: Texture: _cegui_ogre_2: Loading 1 faces(PF_A8B8G8R8,128x128x1) with 0 generated mipmaps from Image. Internal format is PF_A8R8G8B8,128x128x1.
-22:51:59: Texture: _cegui_ogre_3: Loading 1 faces(PF_A8B8G8R8,1024x768x1) with 0 generated mipmaps from Image. Internal format is PF_A8R8G8B8,1024x768x1.
-22:52:00: Texture: _cegui_ogre_4: Loading 1 faces(PF_A8B8G8R8,680x178x1) with 0 generated mipmaps from Image. Internal format is PF_A8R8G8B8,680x178x1.
-22:52:07: Texture: _cegui_ogre_5: Loading 1 faces(PF_B8G8R8,800x600x1) with 0 generated mipmaps from Image. Internal format is PF_X8R8G8B8,800x600x1.
-22:52:07: Texture: _cegui_ogre_6: Loading 1 faces(PF_A8B8G8R8,256x256x1) with 0 generated mipmaps from Image. Internal format is PF_A8R8G8B8,256x256x1.
-22:52:14: Texture: _cegui_ogre_7: Loading 1 faces(PF_B8G8R8,593x509x1) with 0 generated mipmaps from Image. Internal format is PF_X8R8G8B8,593x509x1.
-22:52:14: Texture: _cegui_ogre_8: Loading 1 faces(PF_B8G8R8,239x211x1) with 0 generated mipmaps from Image. Internal format is PF_X8R8G8B8,239x211x1.
-22:52:19: Mesh: Loading Sinbad.mesh.
-22:52:20: Skeleton: Loading Sinbad.skeleton
-22:52:20: Texture: sinbad_body.tga: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-22:52:20: Texture: sinbad_clothes.tga: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-22:52:20: WARNING: the mesh 'Sinbad.mesh' includes vertices with more than 4 bone assignments. The lowest weighted assignments beyond this limit have been removed, so your animation may look slightly different. To eliminate this, reduce the number of bone assignments per vertex on your mesh to 4.
-22:52:20: Mesh: Loading Axe.mesh.
-22:52:20: Mesh: Loading Sword02.mesh.
-22:52:20: Texture: Sword.jpg: Loading 1 faces(PF_R8G8B8,1024x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x1024x1.
-22:52:20: Texture: cloudy_noon_fr.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-22:52:20: Texture: cloudy_noon_bk.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-22:52:20: Texture: cloudy_noon_lf.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-22:52:20: Texture: cloudy_noon_rt.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-22:52:20: Texture: cloudy_noon_up.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-22:52:20: Texture: cloudy_noon_dn.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-22:52:20: Mesh: Loading robot.mesh.
-22:52:21: Skeleton: Loading robot.skeleton
-22:52:21: Can't assign material Examples/Robot to SubEntity of Ogre/MO5 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:21: Can't assign material Examples/Robot to SubEntity of Ogre/MO6 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:21: Texture: rockwall_temp.tga: Loading 1 faces(PF_R8G8B8,256x256x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,256x256x1.
-22:52:21: Can't assign material Examples/Robot to SubEntity of Ogre/MO7 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:21: Can't assign material Examples/Robot to SubEntity of Ogre/MO8 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:21: Texture: r2skin.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-22:52:21: Mesh: Loading penguin.mesh.
-22:52:21: Skeleton: Loading penguin.skeleton
-22:52:21: WARNING: penguin.mesh is an older format ([MeshSerializer_v1.40]); you should upgrade it as soon as possible using the OgreMeshUpgrade tool.
-22:52:21: Can't assign material Penguin to SubEntity of Ogre/MO9 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:21: Texture: penguin.jpg: Loading 1 faces(PF_R8G8B8,512x512x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,512x512x1.
-22:52:21: Mesh: Loading Hut.mesh.
-22:52:21: Texture: grass_1024.jpg: Loading 1 faces(PF_R8G8B8,1024x1024x1) with  hardware generated mipmaps from Image. Internal format is PF_X8R8G8B8,1024x1024x1.
-22:52:21: Can't assign material Penguin to SubEntity of Ogre/MO12 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:21: Can't assign material Penguin to SubEntity of Ogre/MO13 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:21: Can't assign material Penguin to SubEntity of Ogre/MO14 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:21: Can't assign material Penguin to SubEntity of Ogre/MO15 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:21: Can't assign material Penguin to SubEntity of Ogre/MO16 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:21: Can't assign material Penguin to SubEntity of Ogre/MO17 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:21: Can't assign material Penguin to SubEntity of Ogre/MO19 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:21: Can't assign material Penguin to SubEntity of Ogre/MO20 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:21: Can't assign material Penguin to SubEntity of Ogre/MO21 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:21: Can't assign material Penguin to SubEntity of Ogre/MO22 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:21: Can't assign material Penguin to SubEntity of Ogre/MO23 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:21: Can't assign material Penguin to SubEntity of Ogre/MO24 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:22: Texture: _cegui_ogre_9: Loading 1 faces(PF_A8B8G8R8,256x256x1) with 0 generated mipmaps from Image. Internal format is PF_A8R8G8B8,256x256x1.
-22:52:22: Can't assign material Examples/Robot to SubEntity of Ogre/MO25 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:22: Can't assign material Examples/Robot to SubEntity of Ogre/MO26 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:22: Can't assign material Examples/Robot to SubEntity of Ogre/MO27 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:22: Can't assign material Examples/Robot to SubEntity of Ogre/MO28 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:31: Can't assign material Examples/Robot to SubEntity of Ogre/MO29 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:31: Can't assign material Examples/Robot to SubEntity of Ogre/MO30 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:32: Can't assign material Examples/Robot to SubEntity of Ogre/MO31 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:32: Can't assign material Examples/Robot to SubEntity of Ogre/MO32 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:37: Can't assign material Examples/Robot to SubEntity of Ogre/MO33 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:37: Can't assign material Examples/Robot to SubEntity of Ogre/MO34 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:44: Can't assign material Examples/Robot to SubEntity of Ogre/MO35 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:44: Can't assign material Examples/Robot to SubEntity of Ogre/MO36 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:44: Can't assign material Examples/Robot to SubEntity of Ogre/MO37 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:44: Can't assign material Examples/Robot to SubEntity of Ogre/MO38 because this Material does not exist. Have you forgotten to define it in a .material script?
-22:52:47: Texture: _cegui_ogre_10: Loading 1 faces(PF_B8G8R8,593x509x1) with 0 generated mipmaps from Image. Internal format is PF_X8R8G8B8,593x509x1.
-22:52:47: Texture: _cegui_ogre_11: Loading 1 faces(PF_B8G8R8,239x211x1) with 0 generated mipmaps from Image. Internal format is PF_X8R8G8B8,239x211x1.
-22:52:48: Texture: _cegui_ogre_12: Loading 1 faces(PF_B8G8R8,800x600x1) with 0 generated mipmaps from Image. Internal format is PF_X8R8G8B8,800x600x1.
-22:52:54: Texture: _cegui_ogre_13: Loading 1 faces(PF_B8G8R8,593x509x1) with 0 generated mipmaps from Image. Internal format is PF_X8R8G8B8,593x509x1.
-22:52:54: Texture: _cegui_ogre_14: Loading 1 faces(PF_B8G8R8,239x211x1) with 0 generated mipmaps from Image. Internal format is PF_X8R8G8B8,239x211x1.
-22:52:55: Texture: _cegui_ogre_15: Loading 1 faces(PF_B8G8R8,800x600x1) with 0 generated mipmaps from Image. Internal format is PF_X8R8G8B8,800x600x1.
+16:33:17: Creating resource group General
+16:33:17: Creating resource group Internal
+16:33:17: Creating resource group Autodetect
+16:33:17: SceneManagerFactory for type 'DefaultSceneManager' registered.
+16:33:17: Registering ResourceManager for type Material
+16:33:17: Registering ResourceManager for type Mesh
+16:33:17: Registering ResourceManager for type Skeleton
+16:33:17: MovableObjectFactory for type 'ParticleSystem' registered.
+16:33:17: OverlayElementFactory for type Panel registered.
+16:33:17: OverlayElementFactory for type BorderPanel registered.
+16:33:17: OverlayElementFactory for type TextArea registered.
+16:33:17: Registering ResourceManager for type Font
+16:33:17: ArchiveFactory for archive type FileSystem registered.
+16:33:17: ArchiveFactory for archive type Zip registered.
+16:33:17: DDS codec registering
+16:33:17: FreeImage version: 3.13.1
+16:33:17: This program uses FreeImage, a free, open source image library supporting all common bitmap formats. See http://freeimage.sourceforge.net for details
+16:33:17: Supported formats: bmp,ico,jpg,jif,jpeg,jpe,jng,koa,iff,lbm,mng,pbm,pbm,pcd,pcx,pgm,pgm,png,ppm,ppm,ras,tga,targa,tif,tiff,wap,wbmp,wbm,psd,cut,xbm,xpm,gif,hdr,g3,sgi,exr,j2k,j2c,jp2,pfm,pct,pict,pic,bay,bmq,cr2,crw,cs1,dc2,dcr,dng,erf,fff,hdr,k25,kdc,mdc,mos,mrw,nef,orf,pef,pxn,raf,raw,rdc,sr2,srf,arw,3fr,cine,ia,kc2,mef,nrw,qtk,rw2,sti,drf,dsc,ptx,cap,iiq,rwz
+16:33:17: Registering ResourceManager for type HighLevelGpuProgram
+16:33:17: Registering ResourceManager for type Compositor
+16:33:17: MovableObjectFactory for type 'Entity' registered.
+16:33:17: MovableObjectFactory for type 'Light' registered.
+16:33:17: MovableObjectFactory for type 'BillboardSet' registered.
+16:33:17: MovableObjectFactory for type 'ManualObject' registered.
+16:33:17: MovableObjectFactory for type 'BillboardChain' registered.
+16:33:17: MovableObjectFactory for type 'RibbonTrail' registered.
+16:33:17: Loading library .\RenderSystem_Direct3D9_d
+16:33:17: Installing plugin: D3D9 RenderSystem
+16:33:17: D3D9 : Direct3D9 Rendering Subsystem created.
+16:33:17: D3D9: Driver Detection Starts
+16:33:17: D3D9: Driver Detection Ends
+16:33:17: Plugin successfully installed
+16:33:17: Loading library .\RenderSystem_GL_d
+16:33:17: Installing plugin: GL RenderSystem
+16:33:17: OpenGL Rendering Subsystem created.
+16:33:17: Plugin successfully installed
+16:33:17: Loading library .\Plugin_ParticleFX_d
+16:33:17: Installing plugin: ParticleFX
+16:33:17: Particle Emitter Type 'Point' registered
+16:33:17: Particle Emitter Type 'Box' registered
+16:33:17: Particle Emitter Type 'Ellipsoid' registered
+16:33:17: Particle Emitter Type 'Cylinder' registered
+16:33:17: Particle Emitter Type 'Ring' registered
+16:33:17: Particle Emitter Type 'HollowEllipsoid' registered
+16:33:17: Particle Affector Type 'LinearForce' registered
+16:33:17: Particle Affector Type 'ColourFader' registered
+16:33:17: Particle Affector Type 'ColourFader2' registered
+16:33:17: Particle Affector Type 'ColourImage' registered
+16:33:17: Particle Affector Type 'ColourInterpolator' registered
+16:33:17: Particle Affector Type 'Scaler' registered
+16:33:17: Particle Affector Type 'Rotator' registered
+16:33:17: Particle Affector Type 'DirectionRandomiser' registered
+16:33:17: Particle Affector Type 'DeflectorPlane' registered
+16:33:17: Plugin successfully installed
+16:33:17: Loading library .\Plugin_BSPSceneManager_d
+16:33:17: Installing plugin: BSP Scene Manager
+16:33:17: Plugin successfully installed
+16:33:17: Loading library .\Plugin_CgProgramManager_d
+16:33:17: Installing plugin: Cg Program Manager
+16:33:17: Plugin successfully installed
+16:33:17: Loading library .\Plugin_PCZSceneManager_d
+16:33:17: Installing plugin: Portal Connected Zone Scene Manager
+16:33:17: PCZone Factory Type 'ZoneType_Default' registered
+16:33:17: Plugin successfully installed
+16:33:17: Loading library .\Plugin_OctreeZone_d
+16:33:17: Installing plugin: Octree Zone Factory
+16:33:17: Plugin successfully installed
+16:33:17: Loading library .\Plugin_OctreeSceneManager_d
+16:33:17: Installing plugin: Octree & Terrain Scene Manager
+16:33:17: Plugin successfully installed
+16:33:17: *-*-* OGRE Initialising
+16:33:17: *-*-* Version 1.7.1 (Cthugha)
+16:33:17: Creating resource group CEGUI
+16:33:17: Added resource location 'media/UI/animations' of type 'FileSystem' to resource group 'CEGUI'
+16:33:17: Added resource location 'media/UI/configs' of type 'FileSystem' to resource group 'CEGUI'
+16:33:17: Added resource location 'media/UI/imagesets' of type 'FileSystem' to resource group 'CEGUI'
+16:33:17: Added resource location 'media/UI/layouts' of type 'FileSystem' to resource group 'CEGUI'
+16:33:17: Added resource location 'media/UI/looknfeel' of type 'FileSystem' to resource group 'CEGUI'
+16:33:17: Added resource location 'media/UI/lua_scripts' of type 'FileSystem' to resource group 'CEGUI'
+16:33:17: Added resource location 'media/UI/schemes' of type 'FileSystem' to resource group 'CEGUI'
+16:33:17: Added resource location 'media/UI/xml_schemas' of type 'FileSystem' to resource group 'CEGUI'
+16:33:17: Added resource location 'media/UI/fonts' of type 'FileSystem' to resource group 'CEGUI'
+16:33:17: Added resource location 'media' of type 'FileSystem' to resource group 'General'
+16:33:17: Creating resource group Popular
+16:33:17: Added resource location 'media/materials/textures' of type 'FileSystem' to resource group 'Popular'
+16:33:17: Added resource location 'media/materials/scripts' of type 'FileSystem' to resource group 'Popular'
+16:33:17: Added resource location 'media/models' of type 'FileSystem' to resource group 'Popular'
+16:33:17: Added resource location 'media/packs/Sinbad.zip' of type 'Zip' to resource group 'Popular'
+16:33:17: Added resource location 'media/packs/Skybox.zip' of type 'Zip' to resource group 'Popular'
+16:33:17: Parsing scripts for resource group Autodetect
+16:33:17: Finished parsing scripts for resource group Autodetect
+16:33:17: Parsing scripts for resource group CEGUI
+16:33:18: Finished parsing scripts for resource group CEGUI
+16:33:18: Parsing scripts for resource group General
+16:33:18: Finished parsing scripts for resource group General
+16:33:18: Parsing scripts for resource group Internal
+16:33:18: Finished parsing scripts for resource group Internal
+16:33:18: Parsing scripts for resource group Popular
+16:33:18: Parsing script Examples.material
+16:33:18: Parsing script ground.material
+16:33:18: Parsing script Hut.material
+16:33:18: Parsing script Huts.material
+16:33:18: Parsing script Igloo.material
+16:33:18: Parsing script Sinbad.material
+16:33:18: Parsing script Axe.material
+16:33:18: Parsing script Sword02.material
+16:33:18: Finished parsing scripts for resource group Popular
+16:33:18: D3D9 : RenderSystem Option: Allow NVPerfHUD = No
+16:33:18: D3D9 : RenderSystem Option: FSAA = 0
+16:33:18: D3D9 : RenderSystem Option: Floating-point mode = Fastest
+16:33:18: D3D9 : RenderSystem Option: Full Screen = No
+16:33:18: D3D9 : RenderSystem Option: Rendering Device = Monitor-1-NVIDIA GeForce GTX 260
+16:33:18: D3D9 : RenderSystem Option: Resource Creation Policy = Create on all devices
+16:33:18: D3D9 : RenderSystem Option: VSync = No
+16:33:18: D3D9 : RenderSystem Option: VSync Interval = 1
+16:33:18: D3D9 : RenderSystem Option: Video Mode = 800 x 600 @ 32-bit colour
+16:33:18: D3D9 : RenderSystem Option: sRGB Gamma Conversion = No

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Level ID="1" Texture="Grass" NumHutsToSpawn="2" MaxNumEnemies="10">
+    <Huts Name="Hut" Mesh="Hut.mesh" Texture="WOOD_HUT" XpYeild="100" TimeBetweenSpawns="3" GuardianSpawnAmount="3" SpawnRadius="35" AggroRadius="10"></Huts>
+    <Enemies>
+      <Guardian Name="Gaurdians" Mesh="penguin.mesh" Texture="penguin" />
+      <Minion Name="Attackers" Mesh="robot.mesh" Texture="RobotTexture" />
+    </Enemies>
+  </Level>
+  <Level ID="2" Texture="Ice" NumHutsToSpawn="10" MaxNumEnemies="150">
+    <Huts Name="Igloo" Mesh="Igloo.mesh" Texture="Igloo" XpYeild="100" TimeBetweenSpawns="3" GuardianSpawnAmount="3" SpawnRadius="35" AggroRadius="10"></Huts>
+    <Enemies>
+      <Guardian Name="Gaurdians" Mesh="penguin.mesh" Texture="penguin" />
+      <Minion Name="Attackers" Mesh="robot.mesh" Texture="RobotTexture" />
+    </Enemies>
+  </Level>
+  <Level ID="3" Texture="Rockwall" NumHutsToSpawn="1" MaxNumEnemies="2">
+    <Huts Name="Hut" Mesh="fish.mesh" Texture="Rockwall" XpYeild="100" TimeBetweenSpawns="3" GuardianSpawnAmount="3" SpawnRadius="35" AggroRadius="10"></Huts>
+    <Enemies>
+      <Guardian Name="Gaurdians" Mesh="penguin.mesh" Texture="penguin" />
+      <Minion Name="Attackers" Mesh="robot.mesh" Texture="RobotTexture" />
+    </Enemies>
+  </Level>
+</Root>
