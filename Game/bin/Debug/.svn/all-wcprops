@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/22/trunk/Game/bin/Debug
+END
+plugins_d.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/Game/bin/Debug/plugins_d.cfg
+END
+RenderSystem_GL_d.dll
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/Game/bin/Debug/RenderSystem_GL_d.dll
+END
+Plugin_OctreeSceneManager_d.dll
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/2/trunk/Game/bin/Debug/Plugin_OctreeSceneManager_d.dll
+END
+Game.ilk
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/22/trunk/Game/bin/Debug/Game.ilk
+END
+Plugin_BSPSceneManager_d.dll
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/Game/bin/Debug/Plugin_BSPSceneManager_d.dll
+END
+Game.exe
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/22/trunk/Game/bin/Debug/Game.exe
+END
+ogre.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/Game/bin/Debug/ogre.cfg
+END
+Plugin_ParticleFX_d.dll
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2/trunk/Game/bin/Debug/Plugin_ParticleFX_d.dll
+END
+Plugin_PCZSceneManager_d.dll
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/Game/bin/Debug/Plugin_PCZSceneManager_d.dll
+END
+cg.dll
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/2/trunk/Game/bin/Debug/cg.dll
+END
+quakemap_d.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/Game/bin/Debug/quakemap_d.cfg
+END
+samples_d.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/Game/bin/Debug/samples_d.cfg
+END
+Plugin_CgProgramManager_d.dll
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2/trunk/Game/bin/Debug/Plugin_CgProgramManager_d.dll
+END
+OIS_d.dll
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/2/trunk/Game/bin/Debug/OIS_d.dll
+END
+Plugin_OctreeZone_d.dll
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2/trunk/Game/bin/Debug/Plugin_OctreeZone_d.dll
+END
+D3DX9_42.dll
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/Game/bin/Debug/D3DX9_42.dll
+END
+OgreRTShaderSystem_d.dll
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2/trunk/Game/bin/Debug/OgreRTShaderSystem_d.dll
+END
+RenderSystem_Direct3D9_d.dll
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/Game/bin/Debug/RenderSystem_Direct3D9_d.dll
+END
+resources_d.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/19/trunk/Game/bin/Debug/resources_d.cfg
+END
+Ogre.log
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/22/trunk/Game/bin/Debug/Ogre.log
+END
+Game.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/22/trunk/Game/bin/Debug/Game.pdb
+END
+OgreMain_d.dll
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/Game/bin/Debug/OgreMain_d.dll
+END

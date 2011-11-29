@@ -1,0 +1,5 @@
+ItemType
+-------
+0 - Invalid
+1 - Weapon
+2 - Usable

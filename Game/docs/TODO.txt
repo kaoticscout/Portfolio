@@ -1,0 +1,28 @@
+TODO:
+	- Player.cpp(185): Fix player animations for attacking (CHECK)
+	- Add enemy animation (CHECK)
+	- Clean up enemy AI code (10%)
+	- Fix steering behaviors
+	- Add in inventory functionality
+	- Polish GUI
+	- Continue to clean classes
+	- Add stats to player
+	- Boss mob
+	- Loot
+	- Collide with enemies and huts
+	- Improve load times
+	- Player loading/saving
+	- Waypoints
+	- Level switching
+	- "target" via rollover (torchlight style)
+	
+Possibilities:
+	- Modifiable terrain
+	- Collisions with terrain (might have to include physics)
+	- Dynamic collidable objects and pathfinding
+	- wearable equipment
+	- item drops (d2 style)
+	- town
+	- vendors
+	- quests
+	- particle system

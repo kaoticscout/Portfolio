@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D497DF50-6859-4AB4-B2A9-88A2E04E3461}</ProjectGuid>
+    <RootNamespace>Game</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <OutDir>bin\$(Configuration)\</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <OutDir>bin\$(Configuration)\</OutDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\Samples\Common\include;$(OGRE_HOME)\boost_1_42;$(CEGUI_HOME)\cegui;$(CEGUI_HOME)\cegui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)/Game.pdb</ProgramDatabaseFile>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(OGRE_HOME)\lib\debug;$(OGRE_HOME)\boost_1_42\lib;$(CEGUI_HOME)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreMain_d.lib;OIS_d.lib;CEGUIBase_d.lib;CEGUIOgreRenderer_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying exe to samples bin directory ...</Message>
+      <Command>copy "$(OutDir)\$(TargetFileName)" "$(OGRE_HOME)\Bin\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AdditionalIncludeDirectories>include;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\Samples\Common\include;$(OGRE_HOME)\boost_1_42;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OGRE_HOME)\lib\release;$(OGRE_HOME)\boost_1_42\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreMain.lib;OIS.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying exe to samples bin directory ...</Message>
+      <Command>copy "$(OutDir)\$(TargetFileName)" "$(OGRE_HOME)\Bin\$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="docs\ReadMe.txt" />
+    <None Include="res\Game.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\Game.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnimationHelper.h" />
+    <ClInclude Include="src\Screen_Alert.h" />
+    <ClInclude Include="src\Character.h" />
+    <ClInclude Include="src\CollisionManager.h" />
+    <ClInclude Include="src\CollisionObject.h" />
+    <ClInclude Include="src\CON_CollisionTypes.h" />
+    <ClInclude Include="src\CON_EnemyConstants.h" />
+    <ClInclude Include="src\CON_GameConstants.h" />
+    <ClInclude Include="src\CON_GUI.h" />
+    <ClInclude Include="src\CON_HutConstants.h" />
+    <ClInclude Include="src\CON_LevelConstants.h" />
+    <ClInclude Include="src\CON_PlayerConstants.h" />
+    <ClInclude Include="src\Enemy.h" />
+    <ClInclude Include="src\GameAlert.h" />
+    <ClInclude Include="src\GameComponent.h" />
+    <ClInclude Include="src\GameEngine.h" />
+    <ClInclude Include="src\GameObject.h" />
+    <ClInclude Include="src\GraphicsEngine.h" />
+    <ClInclude Include="src\Guardian.h" />
+    <ClInclude Include="src\GUIElement.h" />
+    <ClInclude Include="src\GUIManager.h" />
+    <ClInclude Include="src\GUIScreen.h" />
+    <ClInclude Include="src\Hut.h" />
+    <ClInclude Include="src\Inventory.h" />
+    <ClInclude Include="src\ItemButton.h" />
+    <ClInclude Include="src\Level.h" />
+    <ClInclude Include="src\LevelManager.h" />
+    <ClInclude Include="src\Minion.h" />
+    <ClInclude Include="src\Player.h" />
+    <ClInclude Include="src\RegisteredFrameListener.h" />
+    <ClInclude Include="src\Resource.h" />
+    <ClInclude Include="src\ResourceLocationDefinition.h" />
+    <ClInclude Include="src\Screen_CharacterSelect.h" />
+    <ClInclude Include="src\Screen_Login.h" />
+    <ClInclude Include="src\Screen_Logo.h" />
+    <ClInclude Include="src\Screen_PauseGame.h" />
+    <ClInclude Include="src\Screen_PlayingLevel.h" />
+    <ClInclude Include="src\StateManager.h" />
+    <ClInclude Include="src\SteeringBehaviors.h" />
+    <ClInclude Include="src\tinystr.h" />
+    <ClInclude Include="src\tinyxml.h" />
+    <ClInclude Include="src\WearableGameObject.h" />
+    <ClInclude Include="src\XmlLevelParser.h" />
+    <ClInclude Include="src\XmlParser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AnimationHelper.cpp" />
+    <ClCompile Include="src\Character.cpp" />
+    <ClCompile Include="src\CollisionManager.cpp" />
+    <ClCompile Include="src\CollisionObject.cpp" />
+    <ClCompile Include="src\GameAlert.cpp" />
+    <ClCompile Include="src\GameEngine.cpp" />
+    <ClCompile Include="src\GraphicsEngine.cpp" />
+    <ClCompile Include="src\Guardian.cpp" />
+    <ClCompile Include="src\GUIManager.cpp" />
+    <ClCompile Include="src\Hut.cpp" />
+    <ClCompile Include="src\Inventory.cpp" />
+    <ClCompile Include="src\Level.cpp" />
+    <ClCompile Include="src\LevelManager.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Minion.cpp" />
+    <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\Screen_Alert.cpp" />
+    <ClCompile Include="src\Screen_CharacterSelect.cpp" />
+    <ClCompile Include="src\Screen_Login.cpp" />
+    <ClCompile Include="src\Screen_Logo.cpp" />
+    <ClCompile Include="src\Screen_PauseGame.cpp" />
+    <ClCompile Include="src\Screen_PlayingLevel.cpp" />
+    <ClCompile Include="src\StateManager.cpp" />
+    <ClCompile Include="src\SteeringBehaviors.cpp" />
+    <ClCompile Include="src\tinystr.cpp" />
+    <ClCompile Include="src\tinyxml.cpp" />
+    <ClCompile Include="src\tinyxmlerror.cpp" />
+    <ClCompile Include="src\tinyxmlparser.cpp" />
+    <ClCompile Include="src\XmlLevelParser.cpp" />
+    <ClCompile Include="src\XmlParser.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

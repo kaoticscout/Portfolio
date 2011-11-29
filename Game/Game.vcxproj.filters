@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Constants">
+      <UniqueIdentifier>{3b7d1956-29d9-474a-9047-457dcf6f9539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Button">
+      <UniqueIdentifier>{175f77cf-495d-480e-9814-4a8e627f7e85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TinyXmlHeaders">
+      <UniqueIdentifier>{36dc71f9-2238-400e-97c9-76e0bcc2c889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TinyXmlLib">
+      <UniqueIdentifier>{6acf50b3-f382-4726-88a6-0272c6c021e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Characters">
+      <UniqueIdentifier>{dae7c47b-1a3a-4de2-ac20-506aa6ad4601}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GUIElements">
+      <UniqueIdentifier>{15e0957f-fc44-4dc9-8c12-a561cf629b11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GUIElements\Screens">
+      <UniqueIdentifier>{30f39028-3abb-490b-b6bd-a6cce86a9e2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Managers">
+      <UniqueIdentifier>{148b6cc0-fb3c-46f5-9e79-3dcf24c87590}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters">
+      <UniqueIdentifier>{4e4e9e1f-919b-4aa2-bf46-c1c34b27f549}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUIElements">
+      <UniqueIdentifier>{06df3cb9-3ca5-40d3-b0cf-df3d4eee9b77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers">
+      <UniqueIdentifier>{1fb69191-2a57-4dc5-b679-7bcb01ce8813}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUIElements\Screens">
+      <UniqueIdentifier>{fe90fac0-f1a5-47c2-b4d6-e2d388a27917}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\ReadMe.txt" />
+    <None Include="res\Game.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\Game.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CollisionObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GraphicsEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ResourceLocationDefinition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CON_CollisionTypes.h">
+      <Filter>Header Files\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CON_GameConstants.h">
+      <Filter>Header Files\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CON_PlayerConstants.h">
+      <Filter>Header Files\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CON_EnemyConstants.h">
+      <Filter>Header Files\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Inventory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WearableGameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SteeringBehaviors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CON_GUI.h">
+      <Filter>Header Files\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ItemButton.h">
+      <Filter>Header Files\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CON_HutConstants.h">
+      <Filter>Header Files\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CON_LevelConstants.h">
+      <Filter>Header Files\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tinystr.h">
+      <Filter>Header Files\TinyXmlHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tinyxml.h">
+      <Filter>Header Files\TinyXmlHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\XmlLevelParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\XmlParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RegisteredFrameListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Character.h">
+      <Filter>Header Files\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Enemy.h">
+      <Filter>Header Files\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Guardian.h">
+      <Filter>Header Files\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Minion.h">
+      <Filter>Header Files\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player.h">
+      <Filter>Header Files\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUIScreen.h">
+      <Filter>Header Files\GUIElements\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screen_CharacterSelect.h">
+      <Filter>Header Files\GUIElements\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screen_Login.h">
+      <Filter>Header Files\GUIElements\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screen_PauseGame.h">
+      <Filter>Header Files\GUIElements\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screen_PlayingLevel.h">
+      <Filter>Header Files\GUIElements\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameAlert.h">
+      <Filter>Header Files\GUIElements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUIElement.h">
+      <Filter>Header Files\GUIElements</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUIManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LevelManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StateManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CollisionManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screen_Alert.h">
+      <Filter>Header Files\GUIElements\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Screen_Logo.h">
+      <Filter>Header Files\GUIElements\Screens</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CollisionObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GraphicsEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Inventory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SteeringBehaviors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XmlLevelParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XmlParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tinyxmlparser.cpp">
+      <Filter>Source Files\TinyXmlLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tinystr.cpp">
+      <Filter>Source Files\TinyXmlLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tinyxml.cpp">
+      <Filter>Source Files\TinyXmlLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tinyxmlerror.cpp">
+      <Filter>Source Files\TinyXmlLib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Character.cpp">
+      <Filter>Source Files\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Guardian.cpp">
+      <Filter>Source Files\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Minion.cpp">
+      <Filter>Source Files\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Player.cpp">
+      <Filter>Source Files\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Screen_CharacterSelect.cpp">
+      <Filter>Source Files\GUIElements\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Screen_PlayingLevel.cpp">
+      <Filter>Source Files\GUIElements\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Screen_Login.cpp">
+      <Filter>Source Files\GUIElements\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Screen_PauseGame.cpp">
+      <Filter>Source Files\GUIElements\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameAlert.cpp">
+      <Filter>Source Files\GUIElements</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUIManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CollisionManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LevelManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StateManager.cpp">
+      <Filter>Source Files\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Screen_Alert.cpp">
+      <Filter>Source Files\GUIElements\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AnimationHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Screen_Logo.cpp">
+      <Filter>Source Files\GUIElements\Screens</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

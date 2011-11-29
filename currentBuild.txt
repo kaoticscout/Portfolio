@@ -1,0 +1,5 @@
+- Most of the collision manager in place. 	*Aaron
+- Ogre rendering window set up 			*Aaron and Chris
+- Inventory in place 				*Aaron
+- Animations working 				*Aaron
+- StateManager implemented 			*Chris
