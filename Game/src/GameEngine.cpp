@@ -96,8 +96,9 @@ bool GameEngine::Update(DWORD timeSinceLastFrame)
 
 void GameEngine::HandleInput()
 {
-	//ONLY FOR DEBUGGING
-	GRAPHICSENGINE.ToggleConsoleWindow();
+	#ifdef _DEBUG
+		GRAPHICSENGINE.ToggleConsoleWindow();
+	#endif
 }
 
 void GameEngine::HandleGameLogic(DWORD timeSinceLastTick)

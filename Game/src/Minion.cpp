@@ -40,7 +40,7 @@ void Minion::Initialize()
 
 	mCharacterNode->scale(.1, .1, .1);
 	mCharacterNode->setPosition(100, 100, 0);
-	mCharacterNode->showBoundingBox(true);
+	mCharacterNode->showBoundingBox(false);
 
 	mCharacterEntity->setCastShadows(true);
 	mAnimationHelper = new AnimationHelper(mCharacterEntity);

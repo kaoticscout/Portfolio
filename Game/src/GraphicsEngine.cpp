@@ -2,6 +2,7 @@
 #include <sstream>
 #include "GraphicsEngine.h"
 #include "GameEngine.h"
+#include "OgreWindowEventUtilities.h"
 
 GraphicsEngine::GraphicsEngine() 
 {
@@ -30,7 +31,9 @@ bool GraphicsEngine::Startup(const std::string pluginFileName, const std::string
 
     root = new Ogre::Root(pluginFileName);
 
-	SetupDebugConsole();
+	#ifdef _DEBUG
+		SetupDebugConsole();
+	#endif
 
 	SetupResources();
 	LoadResources();
@@ -60,7 +63,6 @@ bool GraphicsEngine::Startup(const std::string pluginFileName, const std::string
 
 	return true;
 }
-
 
 void GraphicsEngine::Shutdown()
 {
@@ -138,17 +140,24 @@ void GraphicsEngine::SetupDebugConsole()
     std::ios::sync_with_stdio();
 
 	SetConsoleTitle("Processes Game Debug Console");
-
 	std::cout<<"Console Created"<<std::endl;
+
 	std::cout<<"Hit <Escape> to exit game."<<std::endl;
 }
 
+//skip config options in release version
 bool GraphicsEngine::Configure()
-{
-	if (root->showConfigDialog())
+{	
+#ifdef _DEBUG
+	if (root->showConfigDialog()) {
+#else
+	if (root->restoreConfig() || root->showConfigDialog()) {
+#endif
 		window = root->initialise( true, "OGRE" );
+	}
 	else
 		return false;
+
 	return true;
 }
 
@@ -170,7 +179,8 @@ void GraphicsEngine::ToggleConsoleWindow()
 	static bool isVisible = true;
 
 	//Toggles Console Window (TAB Key)
-	if(GAMEENGINE.GetKeyboard()->isKeyDown(OIS::KC_TAB))
+	
+	if(GAMEENGINE.GetKeyboard()->isKeyDown(OIS::KC_GRAVE))
 	{
 		if(isTabDown != true)
 		{

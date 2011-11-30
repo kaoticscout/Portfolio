@@ -27,7 +27,7 @@ void Screen_PauseGame::Startup()
 	mLogoutButton->setArea(CEGUI::URect(CEGUI::UDim(0.2f,0), CEGUI::UDim(0.8f,0), 
 								CEGUI::UDim(0.8f,0), CEGUI::UDim(0.9f,0)));
 	mLogoutButton->subscribeEvent(CEGUI::PushButton::EventMouseClick, CEGUI::Event::Subscriber(&Screen_PauseGame::ExitGameKeyPressed, this));
-	mLogoutButton->setText("ExitGame");
+	mLogoutButton->setText("Exit Game");
 }
 
 void Screen_PauseGame::Shutdown()

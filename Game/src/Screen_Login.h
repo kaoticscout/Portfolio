@@ -13,6 +13,7 @@ private:
 	CEGUI::Editbox*					mUsernameField;
 	CEGUI::Editbox*					mPasswordField;
 	CEGUI::PushButton*				mLoginButton;
+	CEGUI::PushButton*				mExitButton;
 protected:
 public:
 	Screen_Login(const CEGUI::String& type, const CEGUI::String& name, CEGUI::Window* mainWindow)
@@ -31,6 +32,7 @@ public:
 	void Shutdown();
 	void Update(DWORD timeSinceLastFrame);
 	bool LoginKeyPressed(const CEGUI::EventArgs&);
+	bool ExitKeyPressed(const CEGUI::EventArgs&);
 };
 
 #endif

@@ -68,6 +68,9 @@ void GUIManager::SetUpResources()
     sheet = wmgr.createWindow("DefaultWindow");
 	CEGUI::System::getSingleton().setGUISheet(sheet);
 
+	//add a custom font
+	CEGUI::FontManager::getSingleton().create("DejaVuSans-10.font");
+
 	mAlertScreen = new Screen_Alert("TaharezLook/StaticImage", "AlertScreen", sheet);
 }
 

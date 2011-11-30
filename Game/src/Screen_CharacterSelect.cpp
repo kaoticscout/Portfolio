@@ -12,6 +12,7 @@ void Screen_CharacterSelect::Startup()
 	mWindow->setSize(CEGUI::UVector2(CEGUI::UDim(1, 0), CEGUI::UDim(1, 0)));
 	mWindow->setPosition(CEGUI::UVector2(CEGUI::UDim(0, 0), CEGUI::UDim(0, 0)));
 	mWindow->setProperty("Image", "set:charSelectBG image:full_image" );
+	mWindow->setProperty("FrameEnabled", "false");
 	mWindow->setAlpha(1.0);
 	mMainWindow->addChildWindow(mWindow);
 
@@ -20,16 +21,16 @@ void Screen_CharacterSelect::Startup()
 	//add login button
 	mLoginButton = (CEGUI::PushButton*)CEGUI::WindowManager::getSingleton().createWindow("WindowsLook/Button");
 	mWindow->addChildWindow(mLoginButton);
-	mLoginButton->setArea(CEGUI::URect(CEGUI::UDim(0.7f,0), CEGUI::UDim(0.92f,0), 
-								CEGUI::UDim(0.8f,0), CEGUI::UDim(0.97f,0)));
+	mLoginButton->setArea(CEGUI::URect(CEGUI::UDim(0.85f,0), CEGUI::UDim(0.96f,0), 
+								CEGUI::UDim(0.95f,0), CEGUI::UDim(0.995f,0)));
 	mLoginButton->subscribeEvent(CEGUI::PushButton::EventMouseClick, CEGUI::Event::Subscriber(&Screen_CharacterSelect::LoginKeyPressed, this));
 	mLoginButton->setText("Login");
 
 	//add back button
 	mBackButton = (CEGUI::PushButton*)CEGUI::WindowManager::getSingleton().createWindow("WindowsLook/Button");
 	mWindow->addChildWindow(mBackButton);
-	mBackButton->setArea(CEGUI::URect(CEGUI::UDim(0.2f,0), CEGUI::UDim(0.92f,0), 
-								CEGUI::UDim(0.3f,0), CEGUI::UDim(0.97f,0)));
+	mBackButton->setArea(CEGUI::URect(CEGUI::UDim(0.05f,0), CEGUI::UDim(0.96f,0), 
+								CEGUI::UDim(0.15f,0), CEGUI::UDim(0.995f,0)));
 	mBackButton->subscribeEvent(CEGUI::PushButton::EventMouseClick, CEGUI::Event::Subscriber(&Screen_CharacterSelect::BackKeyPressed, this));
 	mBackButton->setText("Back");
 }
@@ -53,7 +54,8 @@ bool Screen_CharacterSelect::BackKeyPressed(const CEGUI::EventArgs& eventName)
 }
 bool Screen_CharacterSelect::LoginKeyPressed(const CEGUI::EventArgs& eventName)
 {
-	GAMEENGINE.GetStateManager()->SetCurrentState(LOADING_LEVEL);
+	if(mSelectedCharacter != -1)
+		GAMEENGINE.GetStateManager()->SetCurrentState(LOADING_LEVEL);
 	return true;
 }
 
@@ -61,8 +63,8 @@ void Screen_CharacterSelect::loadCharacterScreen()
 {
 	//add temp char. window
 	mCharacterWindow = CEGUI::WindowManager::getSingleton().createWindow("TaharezLook/StaticImage");
-	mCharacterWindow->setSize(CEGUI::UVector2(CEGUI::UDim(.4, 0), CEGUI::UDim(.2, 0)));
-	mCharacterWindow->setPosition(CEGUI::UVector2(CEGUI::UDim(0.05, 0), CEGUI::UDim(0.18, 0)));
+	mCharacterWindow->setSize(CEGUI::UVector2(CEGUI::UDim(.4, 0), CEGUI::UDim(.17, 0)));
+	mCharacterWindow->setPosition(CEGUI::UVector2(CEGUI::UDim(0.15, 0), CEGUI::UDim(0.23, 0)));
 	mCharacterWindow->setAlpha(1.0);
 	mWindow->addChildWindow(mCharacterWindow);
 
@@ -89,13 +91,21 @@ void Screen_CharacterSelect::loadCharacterScreen()
 	mCharacterButton->setAlpha(0.0f);
 	mCharacterButton->setSize(CEGUI::UVector2(CEGUI::UDim(.4, 0), CEGUI::UDim(.2, 0)));
 	mCharacterButton->setPosition(CEGUI::UVector2(CEGUI::UDim(0.05, 0), CEGUI::UDim(0.18, 0)));
-	mCharacterButton->subscribeEvent(CEGUI::PushButton::EventMouseDoubleClick, CEGUI::Event::Subscriber(&Screen_CharacterSelect::CharacterButtonPressed, this));
+	mCharacterButton->subscribeEvent(CEGUI::PushButton::EventMouseClick, CEGUI::Event::Subscriber(&Screen_CharacterSelect::CharacterButtonPressed, this));
+	mCharacterButton->subscribeEvent(CEGUI::PushButton::EventMouseDoubleClick, CEGUI::Event::Subscriber(&Screen_CharacterSelect::CharacterButtonPressedTwice, this));
 	mCharacterButton->setText("");
 	mWindow->addChildWindow(mCharacterButton);
 }
 
 
 bool Screen_CharacterSelect::CharacterButtonPressed(const CEGUI::EventArgs& eventName)
+{
+	mCharacterWindow->setLookNFeel("WindowsLook/StaticImage"); //this is temp, change to a diff taharezLook
+	mSelectedCharacter = 1;
+	return true;
+}
+
+bool Screen_CharacterSelect::CharacterButtonPressedTwice(const CEGUI::EventArgs& eventName)
 {
 	GAMEENGINE.GetStateManager()->SetCurrentState(LOADING_LEVEL);
 	return true;

@@ -4,6 +4,7 @@
 #include <iostream>
 #include "GraphicsEngine.h"
 #include "GameEngine.h"
+#include "SoundEngine.h"
 
 void RunMainGameLoop();
 
@@ -18,16 +19,18 @@ int main(int argc, char **argv)
 	#ifdef _DEBUG
 		if (GRAPHICSENGINE.Startup(std::string("plugins_d.cfg"), std::string("ogre.cfg"), std::string("Ogre.log")))
 	#else
-		if (ENGINE.Startup(std::string("plugins.cfg"), std::string("ogre.cfg"), std::string("Ogre.log")))
+		if (GRAPHICSENGINE.Startup(std::string("plugins.cfg"), std::string("ogre.cfg"), std::string("Ogre.log")))
 	#endif
 
 	//Initialize resources
 	GAMEENGINE.Startup();
+	SOUNDENGINE.Startup();
 
 	//Start main game loop
 	RunMainGameLoop();
 
 	//Shut down resources
+	SOUNDENGINE.Shutdown();
 	GAMEENGINE.Shutdown();
 
 	//End rendering loop
@@ -58,6 +61,7 @@ void RunMainGameLoop()
 			//timeSinceLastFrame = ((GetTickCount()/1000)-(GAME_STARTED_TIME/1000)) - (nextGameTick - SKIP_TICKS);
 			timeSinceLastFrame = SKIP_TICKS;
 			GAMEENGINE.Update(timeSinceLastFrame);
+			SOUNDENGINE.Update();
 
             nextGameTick += SKIP_TICKS;
             loops++;

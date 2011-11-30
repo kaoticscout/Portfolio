@@ -8,23 +8,26 @@ class Screen_CharacterSelect
 	: public GUIScreen
 {
 private:
-	CEGUI::Window*					mMainWindow;
-	CEGUI::Window*					mWindow;
+	CEGUI::Window*			mMainWindow;
+	CEGUI::Window*			mWindow;
 	
 	//char window
-	CEGUI::PushButton*				mCharacterButton;
-	CEGUI::Window*					mCharacterWindow;
-	CEGUI::Window*					mCharacterIconWindow;
-	CEGUI::Window*					mCharacterText;
+	CEGUI::PushButton*		mCharacterButton;
+	CEGUI::Window*			mCharacterWindow;
+	CEGUI::Window*			mCharacterIconWindow;
+	CEGUI::Window*			mCharacterText;
 	
-	CEGUI::PushButton*				mBackButton;
-	CEGUI::PushButton*				mLoginButton;
+	CEGUI::PushButton*		mBackButton;
+	CEGUI::PushButton*		mLoginButton;
+
+	int						mSelectedCharacter;
 protected:
 public:
 	Screen_CharacterSelect(const CEGUI::String& type, const CEGUI::String& name, CEGUI::Window* mainWindow)
 		: GUIScreen(type, name)
 	{
 		mMainWindow = mainWindow;
+		mSelectedCharacter = -1;
 		Startup();
 	}
 
@@ -41,7 +44,8 @@ public:
 	
 	bool BackKeyPressed(const CEGUI::EventArgs& eventName);
 	bool LoginKeyPressed(const CEGUI::EventArgs& eventName);
-	bool CharacterButtonPressed(const CEGUI::EventArgs& eventName);
+	bool CharacterButtonPressed(const CEGUI::EventArgs&);
+	bool CharacterButtonPressedTwice(const CEGUI::EventArgs&);
 };
 
 #endif
