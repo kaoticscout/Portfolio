@@ -61,7 +61,7 @@
       <FloatingPointModel>Fast</FloatingPointModel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>include;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\Samples\Common\include;$(OGRE_HOME)\boost_1_42;$(CEGUI_HOME)\cegui;$(CEGUI_HOME)\cegui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\boost_1_42;$(CEGUI_HOME)\cegui\include;C:\FMOD\Programming\api\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -69,8 +69,8 @@
       <ProgramDatabaseFile>$(OutDir)/Game.pdb</ProgramDatabaseFile>
       <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
       <TargetMachine>MachineX86</TargetMachine>
-      <AdditionalLibraryDirectories>$(OGRE_HOME)\lib\debug;$(OGRE_HOME)\boost_1_42\lib;$(CEGUI_HOME)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>OgreMain_d.lib;OIS_d.lib;CEGUIBase_d.lib;CEGUIOgreRenderer_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OGRE_HOME)\lib\debug;$(OGRE_HOME)\boost_1_42\lib;$(CEGUI_HOME)\lib;C:\FMOD\Programming\api\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreMain_d.lib;OIS_d.lib;CEGUIBase_d.lib;CEGUIOgreRenderer_d.lib;fmodex_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Message>Copying exe to samples bin directory ...</Message>
@@ -97,16 +97,16 @@
       <StringPooling>true</StringPooling>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <FloatingPointModel>Fast</FloatingPointModel>
-      <AdditionalIncludeDirectories>include;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\Samples\Common\include;$(OGRE_HOME)\boost_1_42;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\boost_1_42;$(CEGUI_HOME)\cegui\Include;C:\FMOD\Programming\api\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>$(OGRE_HOME)\lib\release;$(OGRE_HOME)\boost_1_42\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>OgreMain.lib;OIS.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OGRE_HOME)\lib\release;$(OGRE_HOME)\boost_1_42\lib;$(CEGUI_HOME)\lib;C:\FMOD\Programming\api\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreMain.lib;OIS.lib;CEGUIBase.lib;CEGUIOgreRenderer.lib;fmodex_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Message>Copying exe to samples bin directory ...</Message>
@@ -158,6 +158,7 @@
     <ClInclude Include="src\Screen_Logo.h" />
     <ClInclude Include="src\Screen_PauseGame.h" />
     <ClInclude Include="src\Screen_PlayingLevel.h" />
+    <ClInclude Include="src\SoundEngine.h" />
     <ClInclude Include="src\StateManager.h" />
     <ClInclude Include="src\SteeringBehaviors.h" />
     <ClInclude Include="src\tinystr.h" />
@@ -189,6 +190,7 @@
     <ClCompile Include="src\Screen_Logo.cpp" />
     <ClCompile Include="src\Screen_PauseGame.cpp" />
     <ClCompile Include="src\Screen_PlayingLevel.cpp" />
+    <ClCompile Include="src\SoundEngine.cpp" />
     <ClCompile Include="src\StateManager.cpp" />
     <ClCompile Include="src\SteeringBehaviors.cpp" />
     <ClCompile Include="src\tinystr.cpp" />
